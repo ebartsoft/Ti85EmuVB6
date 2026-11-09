@@ -4,8 +4,7 @@ A pure VB6 TI-85 emulator with a scalable calculator interface, LCD
 rendering, full emulator state save/load, link transfers, themes and
 support for custom ROM images.
 
-No third-party ActiveX/OCX components are used. File dialogs use the
-included `CommonDialog.cls` wrapper (Win32 API).
+No third-party ActiveX/OCX components are used.
 
 ![screenshot](screenshot.png)
 
@@ -23,7 +22,6 @@ included `CommonDialog.cls` wrapper (Win32 API).
 | `Ti85EmuVB6.vbw` | VB6 workspace layout |
 | `frmMain.frm` | main window, menus, keypad and emulation loop |
 | `frmMain.frx` | binary form data (window/application icon) |
-| `Res\AppIcon.ico` | source icon used for the form and the `.exe` |
 | `UCTi85Btn.ctl` | TI-85 key button user control |
 | `UCTi85LCD.ctl` | 128 x 64 LCD renderer and screenshot writer |
 | `CTi85Layout.cls` | scalable layout and zoom handling |
@@ -35,7 +33,6 @@ included `CommonDialog.cls` wrapper (Win32 API).
 | `modLink.bas` | TI-85 link emulation and PC file transfer |
 | `CommonDialog.cls` | Win32 open/save dialog wrapper (do not modify) |
 | `Ti85EmuVB6.RES` | embedded `CUSTOM` resource fallback |
-| `Roms\` | TI-85 factory ROM images |
 | `CustomRom\` | BMP to custom ROM builder and example files |
 
 Runtime files (created automatically as needed):
@@ -114,9 +111,6 @@ machine. Defaults when a key is missing:
 
 Use **Emulator -> Load ROM File...** to select a ROM at runtime. That
 updates `RomFilePath`, loads the ROM and resets the calculator.
-
-`Roms\` contains several 128 KB factory ROM images, including
-`ti85v100.bin`. The project root also contains `TI85.ROM`.
 
 If `RomFilePath` is missing or invalid, `Ti85LoadRom` falls back to the
 embedded `CUSTOM` resource (id 101) in `Ti85EmuVB6.RES`. The current
@@ -284,13 +278,6 @@ generator. The VB6 project writes the machine code directly. See
   buffers.
 - The state format is versioned (magic `TI85ST01`, version 1). Do not change
   the layout without bumping the version.
-- VB6 source files must use CRLF line endings. LF-only `.vbp` files may
-  cause modules to be ignored during compilation.
-- This project is not a git repository. Use timestamped ZIP backups in the
-  `backup\` folder.
-- `Res\popo.mock` and `Res\popo.png` are user files; do not delete them.
-- `CustomRom\download (3).bmp`, `download (9).bmp` and `download--.bmp` are
-  user test images; do not delete them.
 
 ## Credits
 
