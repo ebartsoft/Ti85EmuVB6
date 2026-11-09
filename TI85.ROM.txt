@@ -1,0 +1,27 @@
+You will find a compatible ROM file at the following web address:
+
+  https://github.com/scygan/EmuTI/raw/refs/heads/master/assets/TI85.ROM
+    - File ROM version is v9.0
+    - File MD5 hash is edc54d0b01274e9c3cd56ef3f591ae59
+
+
+Other ROM files versions and signatures:
+
+  TI85_v3a.ROM d605d3ce4123053f866762aae68554f8
+  TI85_v4.ROM  a928bdf958fca70161f1508f535d0a4a
+  TI85_v5.ROM  a51a8eaa9ce32be59a18bacfe9b2dc8e
+  TI85_v6.ROM  a182fe348523bce3e6b2b36ebf8f6412
+  TI85_v8.ROM  9b8e23ccf63ec067ce9a4945dcc77a1f
+  TI85_v9.ROM  d7368e33846e348a62bb5725da95f88c
+  TI85_v10.ROM c41be0b3d23fae52f391781fc9ee8c07
+
+
+TI-85 File archive:
+
+  https://www.ticalc.org/pub/85/
+
+
+How to dump your own TI-85 ROM:
+
+  https://www.ticalc.org/programming/emulators/romdump.html#6
+
